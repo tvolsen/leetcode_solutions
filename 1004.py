@@ -1,3 +1,4 @@
+# 1004. Max Consecutive Ones III
 class Solution:
     def longestOnes(self, nums: List[int], k: int) -> int:
         # ans, left pointer and num flips
