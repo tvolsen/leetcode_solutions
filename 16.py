@@ -17,10 +17,10 @@ class Solution:
                 # if triple is closer to ans, update ans
                 if abs(target - ans) > abs(target - (a+b+c)):
                     ans = a+b+c
-                # if we exceed target, make sum smaller by moving right
+                # if we exceed target, make sum smaller by moving right pointer
                 if a+b+c >= target:
                     right -= 1
-                # if we are under target, make sum larger by moving left
+                # if we are under target, make sum larger by moving left pointer
                 else:
                     left += 1
         return ans
