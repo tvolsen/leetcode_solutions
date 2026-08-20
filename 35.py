@@ -18,7 +18,7 @@ class Solution:
             # otherwise need to make search values larger
             else:
                 left = mid + 1
-        # return mid because on the last iteration, left == right == mid
+        # return LEFT because on the last iteration, left == right == mid
         # if nums[mid] > target: 
         #     the target is just before mid, ie, inserted at index mid == left
         # if nums[mid] < target: 
