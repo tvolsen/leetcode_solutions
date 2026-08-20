@@ -3,7 +3,7 @@ class Solution:
     def smallestDivisor(self, nums: List[int], threshold: int) -> int:
         from math import ceil
         left = 1
-        right = sum(nums) + 1
+        right = max(nums)
         while left <= right:
             mid = (left + right) // 2
             curr = sum([math.ceil(x/mid) for x in nums])
