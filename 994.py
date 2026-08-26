@@ -1,7 +1,7 @@
 # 994. Rotting Oranges
-from collections import deque
 class Solution:
     def orangesRotting(self, grid: List[List[int]]) -> int:
+        from collections import deque
         q = deque([])
         m = len(grid)
         n = len(grid[0])
