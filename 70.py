@@ -1,5 +1,8 @@
 # 70. Climbing Stairs
 class Solution:
+    """
+    the states in this problem represent the number of ways you can reach step i
+    """
     def climbStairs(self, n: int) -> int:
         # the previously observed states are stored here
         dp = [0] * (n+1)
